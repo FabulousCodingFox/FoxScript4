@@ -1,15 +1,4 @@
-def containsAny(txt: str, chars: list[str]) -> bool:
-    """
-    Checks if a string contains any of the given characters
-    :param txt:
-    :param chars:
-    :return bool:
-    """
-    for c in chars:
-        if c in txt:
-            return True
-    return False
-
+from ..util.StringUtils import containsAny
 
 def splitPackages(txt: str, delimiters: list[str]) -> list[str]:
     level: int = 0
