@@ -4,15 +4,15 @@ from colorama import Style
 from datetime import datetime
 
 class Logger:
-    def _prepareMessage(col:Fore, txt:str) -> str:
+    def _prepareMessage(col:Fore, stage:str, txt:str) -> str:
         currentDateAndTime = datetime.now().strftime("%H:%M:%S")
-        return f"{col}[{currentDateAndTime}]: {txt}"
+        return f"{col}[{currentDateAndTime}][{stage}]: {Style.RESET_ALL}{txt}"
 
     def init() -> None:
         colorama_init()
 
-    def log(txt:str) -> None:
-        print(Logger._prepareMessage(Fore.WHITE, txt))
+    def log(stage:str, txt:str) -> None:
+        print(Logger._prepareMessage(Fore.WHITE, stage, txt))
     
-    def error(txt:str) -> None:
-        print(Logger._prepareMessage(Fore.RED, txt))
+    def error(stage:str, txt:str) -> None:
+        print(Logger._prepareMessage(Fore.RED, stage, txt))
