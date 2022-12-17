@@ -1,12 +1,22 @@
+from compile.McFunction import McFunction
+
 class Compiler(object):
     def __init__(self) -> None:
         self.functions:list = []
+
+    def addFunction(self, func:McFunction) -> None:
+        self.functions.append(func)
     
     def compile(self) -> None:
-        i:int = 0
-        while i < len(self.functions):
-            # Compile the function at [i]
-            i+=1
+        while True:
+            for i,f in list(enumerate(self.functions)):
+                i:int
+                f:McFunction
+                if not f.isCompiled:
+                    f.compile()
+                
+
+
 
 
 c = Compiler()
