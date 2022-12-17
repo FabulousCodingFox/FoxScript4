@@ -182,9 +182,9 @@ def resolveFormula(self, formula: str) -> str:
     :return mcfunctionCode:
     """
 
-    formula = formula.replace(" ", "").replace("\n", "")
-    idCounter = StaticCountingInt()
-    code = CodeWrapper()
+    formula:str                 = formula.replace(" ", "").replace("\n", "")
+    idCounter:StaticCountingInt = StaticCountingInt()
+    code:CodeWrapper            = CodeWrapper()
 
     root = MathPacket(
         value = formula,
