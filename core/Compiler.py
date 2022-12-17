@@ -1,13 +1,16 @@
 from compile.McFunction import McFunction
+from util.Logger import Logger
 
 class Compiler(object):
-    def __init__(self) -> None:
+    def __init__(self, pt:str) -> None:
         self.functions:list = []
+        self.projectPath:str = pt
 
     def addFunction(self, func:McFunction) -> None:
         self.functions.append(func)
     
     def compile(self) -> None:
+
         while True:
             c = True
             for i,f in list(enumerate(self.functions)):
@@ -18,6 +21,6 @@ class Compiler(object):
                     f.compile(self)
             if c: break
             
-c = Compiler()
-print(c.resolveFormula("1+(2+3)*4"))
+c = Compiler("C:/Users/%USERNAME%/Documents/GitHub/FoxScript4/example-project/")
+#print(c.resolveFormula("1+(2+3)*4"))
         
