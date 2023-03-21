@@ -1,3 +1,7 @@
+[![GitHub license](https://img.shields.io/github/license/FabulousCodingFox/FoxScript4.svg)](https://github.com/FabulousCodingFox/FoxScript4/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/FabulousCodingFox/FoxScript4.svg)](https://GitHub.com/FabulousCodingFox/FoxScript4/releases/)
+[![GitHub stars](https://img.shields.io/github/stars/FabulousCodingFox/FoxScript4.svg)](https://GitHub.com/FabulousCodingFox/FoxScript4/stargazers/)
+
 # **WARNING: UNUSABLE AT THE MOMENT**
 
 # FoxScript4
